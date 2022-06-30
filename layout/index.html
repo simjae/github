@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>layout</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header text__center">
+            <div class="content__text">header</div>
+        </div>
+        <div class="container text__center">
+            <div class="content__text">container</div>
+        </div>
+        <div class="nav">
+            <div class="hamburger__menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="nav__wrap hidden">
+                <div class="nav__parent__wrap">
+                    <div class="nav__parent">대시보드</div>
+                </div>
+                <div class="nav__parent__wrap">
+                    <div class="nav__parent">
+                        <span>상점관리</span>
+                        <div class="nav__child__wrap">
+                            <div class="nav__child" data-url="/store/info" onclick="location.href='/store/info'">기본정보관리
+                            </div>
+                            <div class="nav__child" data-url="/store/admin" onclick="location.href='/store/admin'">운영자
+                                관리</div>
+                            <div class="nav__child" data-url="/store/notice" onclick="location.href='/store/notice'">
+                                홈페이지 내 알림메시지 설정</div>
+                            <div class="nav__child" onclick="location.href=''">부가서비스 이용내역 조회</div>
+                            <div class="nav__child" onclick="location.href=''">검색엔진 최적화 설정</div>
+                            <div class="nav__child" onclick="location.href=''">채널관리(마케팅)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__parent__wrap">
+                    <div class="nav__parent">
+                        <span>고객관리</span>
+                        <div class="nav__child__wrap">
+                            <div class="nav__child" data-url="/member/info" onclick="location.href='/member/info'">회원 조회
+                            </div>
+                            <div class="nav__child" data-url="/member/visit" onclick="location.href='/member/visit'">회원
+                                방문관리</div>
+                            <div class="nav__child" data-url="/member/reserve"
+                                onclick="location.href='/member/reserve'">적립금 관리</div>
+                            <div class="nav__child" data-url="/member/coupon" onclick="location.href='/member/coupon'">
+                                쿠폰관리</div>
+                            <div class="nav__child" data-url="/member/sms" onclick="location.href='/member/sms'">재입고 SMS
+                                발송 관리</div>
+                            <div class="nav__child" data-url="/member/mail" onclick="location.href='/member/mail'">자동 메일
+                                발송 설정</div>
+                            <div class="nav__child" data-url="/member/kakao" onclick="location.href='/member/kakao'">
+                                SMS(카카오톡) 사용 설정</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__parent__wrap">
+                    <div class="nav__parent">
+                        <span>상품관리</span>
+                        <div class="nav__child__wrap">
+                            <div class="nav__child" data-url="/product/classify"
+                                onclick="location.href='/product/classify'">상품 분류 관리</div>
+                            <div class="nav__child" data-url="/product/register"
+                                onclick="location.href='/product/register'">개별 상품 등록</div>
+                            <div class="nav__child" data-url="/product/set" onclick="location.href='/product/set'">세트 상품
+                                등록</div>
+                            <div class="nav__child" data-url="/product/excel" onclick="location.href='/product/excel'">
+                                엑셀 등록</div>
+                            <div class="nav__child" data-url="/product/list" onclick="location.href='/product/list'">상품
+                                목록</div>
+                            <div class="nav__child" data-url="/product/update"
+                                onclick="location.href='/product/update'">상품 정보 일괄 변경</div>
+                            <div class="nav__child" data-url="/product/delete"
+                                onclick="location.href='/product/delete'">삭제 상품 목록</div>
+                            <div class="nav__child" data-url="/product/stock" onclick="location.href='/product/stock'">
+                                상품 재고 조회</div>
+                            <div class="nav__child" data-url="/product/sold" onclick="location.href='/product/sold'">품절
+                                상품 관리</div>
+                            <div class="nav__child" data-url="/product/bluemark"
+                                onclick="location.href='/product/bluemark'">블루마크</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__parent__wrap">
+                    <div class="nav__parent">
+                        <span>전시관리</span>
+                        <div class="nav__child__wrap">
+                            <div class="nav__child" data-url="/display/product"
+                                onclick="location.href='/display/product'">상품 진열</div>
+                            <div class="nav__child" data-url="/display/board" onclick="location.href='/display/board'">
+                                게시판 관리</div>
+                            <div class="nav__child" data-url="/display/post" onclick="location.href='/display/post'">게시물
+                                관리</div>
+                            <div class="nav__child" data-url="/display/popup/list"
+                                onclick="location.href='/display/popup/list'">팝업 관리</div>
+                            <div class="nav__child" data-url="/display/event" onclick="location.href='/display/event'">
+                                이벤트 관리</div>
+                            <div class="nav__child" data-url="/display/draw" onclick="location.href='/display/draw'">드로우
+                                관리</div>
+                            <div class="nav__child" data-url="/display/store" onclick="location.href='/display/store'">
+                                매장보기 관리</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__parent__wrap">
+                    <div class="nav__parent">
+                        <span>주문관리</span>
+                        <div class="nav__child__wrap">
+                            <div class="nav__child" data-url="/order/list" onclick="location.href='/order/list'">주문 조회
+                            </div>
+                            <div class="nav__child" data-url="/order/refund" onclick="location.href='/order/refund'">
+                                취소/교환/반품/환불 관리</div>
+                            <div class="nav__child" data-url="/order/deposit" onclick="location.href='/order/deposit'">
+                                자동입금 내역확인</div>
+                            <div class="nav__child" data-url="/order/deliver" onclick="location.href='/order/deliver'">
+                                배송 설정</div>
+                            <div class="nav__child" data-url="/order/receipt" onclick="location.href='/order/receipt'">
+                                현금영수증 관리</div>
+                            <div class="nav__child" data-url="/order/admin" onclick="location.href='/order/admin'">관리자
+                                메모 조회</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__parent__wrap">
+                    <div class="nav__parent">
+                        <span>분석/대시보드</span>
+                        <div class="nav__child__wrap">
+                            <div class="nav__child" onclick="location.href=''">통합엑셀 다운로드</div>
+                            <div class="nav__child" onclick="location.href=''">대시보드</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer text__center">
+            <div class="content__text">footer</div>
+        </div>
+    </div>
+</body>
+
+</html>
