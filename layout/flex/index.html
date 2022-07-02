@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>layout</title>
+</head>
+
+<body>
+    <div class="temp"></div>
+    <div class="dark__light"></div>
+    <div class="app">
+        <div class="header">
+            <div class="header__logo"></div>
+            <div class="header__menu">
+                <a class="menu--link is-active" href="#">대시보드</a>
+                <a class="menu--link notify" href="#">상점관리</a>
+                <a class="menu--link" href="#">고객관리</a>
+                <a class="menu--link notify" href="#">상품관리</a>
+                <a class="menu--link notify" href="#">전시관리</a>
+            </div>
+            <div class="header__search__bar"></div>
+        </div>
+        <div class="wrapper">
+            <div class="left__side">
+                <div class="side__wrapper">
+                    <div class="side__title">대시보드</div>
+                    <div class="side__menu">
+                        <a href="#">
+                            <svg viewBox="0 0 512 512">
+                                <g xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path
+                                        d="M0 0h128v128H0zm0 0M192 0h128v128H192zm0 0M384 0h128v128H384zm0 0M0 192h128v128H0zm0 0"
+                                        data-original="#bfc9d1" />
+                                </g>
+                                <path xmlns="http://www.w3.org/2000/svg" d="M192 192h128v128H192zm0 0"
+                                    fill="currentColor" data-original="#82b1ff" />
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M384 192h128v128H384zm0 0M0 384h128v128H0zm0 0M192 384h128v128H192zm0 0M384 384h128v128H384zm0 0"
+                                    fill="currentColor" data-original="#bfc9d1" />
+                            </svg>
+                            메인
+                        </a>
+                    </div>
+                </div>
+                <div class="side__wrapper">
+                    <div class="side__title">상점관리</div>
+                    <div class="side__menu">
+                        <a class="side__menu__child" data-url="/store/info" onclick="location.href='/store/info'">기본정보관리
+                        </a>
+                        <a class="side__menu__child" data-url="/store/admin" onclick="location.href='/store/admin'">운영자
+                            관리</a>
+                        <a class="side__menu__child" data-url="/store/notice" onclick="location.href='/store/notice'">
+                            홈페이지 내 알림메시지 설정</a>
+                        <a class="side__menu__child" onclick="location.href=''">부가서비스 이용내역 조회</a>
+                        <a class="side__menu__child" onclick="location.href=''">검색엔진 최적화 설정</a>
+                        <a class="side__menu__child" onclick="location.href=''">채널관리(마케팅)</a>
+                    </div>
+                </div>
+                <div class="side__wrapper">
+                    <div class="side__title">고객관리</div>
+                    <div class="side__menu">
+                        <a class="side__menu__child" data-url="/member/info" onclick="location.href='/member/info'">회원 조회
+                        </a>
+                        <a class="side__menu__child" data-url="/member/visit" onclick="location.href='/member/visit'">회원
+                            방문관리</a>
+                        <a class="side__menu__child" data-url="/member/reserve" onclick="location.href='/member/reserve'">적립금
+                            관리</a>
+                        <a class="side__menu__child" data-url="/member/coupon" onclick="location.href='/member/coupon'">
+                            쿠폰관리</a>
+                        <a class="side__menu__child" data-url="/member/sms" onclick="location.href='/member/sms'">재입고 SMS
+                            발송 관리</a>
+                        <a class="side__menu__child" data-url="/member/mail" onclick="location.href='/member/mail'">자동 메일
+                            발송 설정</a>
+                        <a class="side__menu__child" data-url="/member/kakao" onclick="location.href='/member/kakao'">
+                            SMS(카카오톡) 사용 설정</a>
+                    </div>
+                </div>
+                <div class="side__wrapper">
+                    <div class="side__title">상품관리</div>
+                    <div class="side__menu">
+                        <a class="side__menu__child" data-url="/product/classify"
+                            onclick="location.href='/product/classify'">상품 분류 관리</a>
+                        <a class="side__menu__child" data-url="/product/register"
+                            onclick="location.href='/product/register'">개별 상품 등록</a>
+                        <a class="side__menu__child" data-url="/product/set" onclick="location.href='/product/set'">세트 상품
+                            등록</a>
+                        <a class="side__menu__child" data-url="/product/excel" onclick="location.href='/product/excel'">
+                            엑셀 등록</a>
+                        <a class="side__menu__child" data-url="/product/list" onclick="location.href='/product/list'">상품
+                            목록</a>
+                        <a class="side__menu__child" data-url="/product/update" onclick="location.href='/product/update'">상품 정보
+                            일괄 변경</a>
+                        <a class="side__menu__child" data-url="/product/delete" onclick="location.href='/product/delete'">삭제 상품
+                            목록</a>
+                        <a class="side__menu__child" data-url="/product/stock" onclick="location.href='/product/stock'">
+                            상품 재고 조회</a>
+                        <a class="side__menu__child" data-url="/product/sold" onclick="location.href='/product/sold'">품절
+                            상품 관리</a>
+                        <a class="side__menu__child" data-url="/product/bluemark"
+                            onclick="location.href='/product/bluemark'">블루마크</a>
+                    </div>
+                </div>
+                <div class="side__wrapper">
+                    <div class="side__title">전시관리</div>
+                    <div class="side__menu">
+                        <a class="side__menu__child" data-url="/display/product" onclick="location.href='/display/product'">
+                            상품 진열</a>
+                        <a class="side__menu__child" data-url="/display/board" onclick="location.href='/display/board'">
+                            게시판 관리</a>
+                        <a class="side__menu__child" data-url="/display/post" onclick="location.href='/display/post'">게시물
+                            관리</a>
+                        <a class="side__menu__child" data-url="/display/popup/list"
+                            onclick="location.href='/display/popup/list'">팝업 관리</a>
+                        <a class="side__menu__child" data-url="/display/event" onclick="location.href='/display/event'">
+                            이벤트 관리</a>
+                        <a class="side__menu__child" data-url="/display/draw" onclick="location.href='/display/draw'">드로우
+                            관리</a>
+                        <a class="side__menu__child" data-url="/display/store" onclick="location.href='/display/store'">
+                            매장보기 관리</a>
+                    </div>
+                </div>
+                <div class="side__wrapper">
+                    <div class="side__title">주문관리</div>
+                    <div class="side__menu">
+                        <a class="side__menu__child" data-url="/order/list" onclick="location.href='/order/list'">주문 조회
+                        </a>
+                        <a class="side__menu__child" data-url="/order/refund" onclick="location.href='/order/refund'">
+                            취소/교환/반품/환불 관리</a>
+                        <a class="side__menu__child" data-url="/order/deposit" onclick="location.href='/order/deposit'">
+                            자동입금 내역확인</a>
+                        <a class="side__menu__child" data-url="/order/deliver" onclick="location.href='/order/deliver'">
+                            배송 설정</a>
+                        <a class="side__menu__child" data-url="/order/receipt" onclick="location.href='/order/receipt'">
+                            현금영수증 관리</a>
+                        <a class="side__menu__child" data-url="/order/admin" onclick="location.href='/order/admin'">관리자
+                            메모 조회</a>
+                    </div>
+                </div>
+                <div class="side__wrapper">
+                    <div class="side__title">분석/대시보드</div>
+                    <div class="side__menu">
+                        <a class="side__menu__child" onclick="location.href=''">통합엑셀 다운로드</a>
+                        <a class="side__menu__child" onclick="location.href=''">대시보드</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main__container">
+                <div class="main__header">
+                    <a class="menu__link__main" href="#">대시보드</a>
+                    <div class="header__menu">
+                        <a class="main__header--link is-active" href="#">Desktop</a>
+                        <a class="main__header--link" href="#">Mobile</a>
+                        <a class="main__header--link" href="#">Web</a>
+                    </div>
+                </div>
+                <div class="main__content__wraper">
+                    <div class="content__wraper__header"></div>
+                    <div class="content__section">
+                        <div class="content__section--title"></div>
+                        <div class="content__section--card"></div>
+                    </div>
+                    <div class="content__section">
+                        <div class="content__section--title"></div>
+                        <div class="content__section--card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=""></div>
+
+    </div>
+</body>
+
+</html>
