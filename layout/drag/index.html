@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    }
+    .container{
+        width: 400px;
+        height: 400px;
+        border: solid 1px black;
+        display: flex;
+        justify-content: center;
+    }   
+    .drag-wrap{
+        
+    }
+    .item{
+        background-color: red;
+        display: flex;
+        border: solid 1px #fff;
+        width: 50px;
+        text-align: center;
+        align-items: center;
+        color: #fff;
+        height: 50px;
+        justify-content: center;
+        border-radius:10px;
+
+    }      
+    .item__wrap{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="drag__wrap">
+            <div class="item__wrap">
+                <div class="item" draggable="true">a</div>
+                <div class="item" draggable="true">b</div>
+                <div class="item" draggable="true">c</div>
+                <div class="item" draggable="true">d</div>
+                <div class="item" draggable="true">f</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="drag__wrap">
+            <div class="item__wrap">
+                <div class="item" draggable="true">g</div>
+                <div class="item" draggable="true">h</div>
+                <div class="item" draggable="true">i</div>
+                <div class="item" draggable="true">j</div>
+                <div class="item" draggable="true">k</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const list  = document.querySelector(".item__wrap ");
+    const piked = document.querySelector('.item');
+    let picked  = null;
+    list.addEventListener('dragstart', (e)=>{
+        const obj = e.target;
+        console.log({obj});
+    });
+    list.addEventListener('dragover', (e)=>{
+        e.preventDefault();
+        console.log(e);
+    });
+    list.addEventListener('drop', (e)=>{
+        e.target.before(picked);
+    });
+
+    //
+
+
+
+</script>
+</html>
